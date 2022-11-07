@@ -11,7 +11,3 @@ SELECT name FROM albums WHERE release_date > 1989 AND release_date < 2000;
 SELECT name FROM albums WHERE sales < 20;
 
 SELECT name FROM albums WHERE genre = 'Rock';
-
-
-
-
