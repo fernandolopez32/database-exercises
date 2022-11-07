@@ -33,3 +33,7 @@ INSERT INTO albums (artist , name, release_date, genre,sales) VALUES
     ('The Beatles','Sgt. Pepper\'s Lonely Hearts Club Band',1967, 'Rock',18.3),
     ('Michael Jackson','Dangerous',1991,'New jack swing, R&B and pop',17.0),
     ('The Beatles','Abbey Road',1969,'Rock',16.9);
+
+
+INSERT INTO albums (artist , name, release_date, genre,sales) VALUES
+('Nirvana','Nevermind',1991,'Grunge, alternative rock',17.8)
