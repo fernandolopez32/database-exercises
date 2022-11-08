@@ -9,4 +9,4 @@ CREATE TABLE albums (
     genre VARCHAR(20),
     PRIMARY KEY (user_id)
 );
-
+/*comment*/
