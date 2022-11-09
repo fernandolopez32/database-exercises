@@ -14,7 +14,7 @@ SELECT DISTINCT first_name FROM employees GROUP BY first_name;
 SELECT COUNT(first_name),first_name FROM employees GROUP BY first_name;
 
 
-
+SELECT * FROM titles ORDER BY title;
 
 # EXERCISE
 
@@ -22,6 +22,8 @@ SELECT DISTINCT title FROM titles;
 
 SELECT DISTINCT last_name  FROM employees WHERE (last_name LIKE 'E%' AND last_name LIKE '%e');
 
-SELECT COUNT(last_name), last_name FROM employees WHERE (last_name LIKE '%q%' AND NOT last_name LIKE '%qu%') GROUP BY last_name;
+SELECT DISTINCT last_name,first_name  FROM employees WHERE (last_name LIKE 'E%' AND last_name LIKE '%e') ORDER BY first_name;
 
-SELECT COUNT(*),gender FROM employees WHERE ((first_name = 'Irena' OR first_name = 'Vidya') OR first_name = 'Maya') GROUP BY gender;
+SELECT COUNT(last_name)AS number, last_name  FROM employees WHERE (last_name LIKE '%q%' AND NOT last_name LIKE '%qu%') GROUP BY last_name;
+
+SELECT COUNT(*) AS number_of_employees,gender FROM employees WHERE ((first_name = 'Irena' OR first_name = 'Vidya') OR first_name = 'Maya') GROUP BY gender;
