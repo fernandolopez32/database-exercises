@@ -1,0 +1,26 @@
+USE employees;
+
+# lecture for group by
+SELECT COUNT(*) AS number_of_names, gender FROM employees GROUP BY gender;
+
+SELECT AVG(DATEDIFF(hire_date, birth_date))/365 AS average_age_hired FROM employees;
+
+SELECT MIN(DATEDIFF(hire_date, birth_date))/365 AS average_age_hired FROM employees;
+
+SELECT MAX(DATEDIFF(hire_date, birth_date))/365 AS average_age_hired FROM employees;
+
+SELECT DISTINCT first_name FROM employees GROUP BY first_name;
+
+SELECT COUNT(first_name),first_name FROM employees GROUP BY first_name;
+
+
+
+
+# EXERCISE
+
+SELECT DISTINCT title FROM titles;
+
+SELECT DISTINCT last_name  FROM employees WHERE (last_name LIKE 'E%' AND last_name LIKE '%e');
+
+SELECT COUNT(last_name), last_name FROM employees WHERE (last_name LIKE '%q%' AND NOT last_name LIKE '%qu%') GROUP BY last_name;
+
