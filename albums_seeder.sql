@@ -31,3 +31,4 @@ INSERT INTO albums (artist , name, release_date, genre,sales) VALUES
     ('Michael Jackson','Dangerous',1991,'New jack swing, R&B and pop',17.0),
     ('The Beatles','Abbey Road',1969,'Rock',16.9),
     ('Nirvana','Nevermind',1991,'Grunge, alternative rock',17.8);
+
