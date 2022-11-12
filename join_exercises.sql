@@ -39,18 +39,19 @@ FROM employees as e
               ON d.dept_no = dm.dept_no
 WHERE dm.to_date = '9999-01-01' AND e.gender = 'F';
 
-SELECT DISTINCT t.title
-FROM dept_emp AS dp
-        JOIN departments AS d
-              ON d.dept_no =  dp.dept_no;
-        JOIN titles AS t
-            ON t.empno
+# SELECT DISTINCT t.title
+# FROM dept_emp AS dp
+#         JOIN departments AS d
+#               ON d.dept_no =  dp.dept_no;
+#         JOIN titles AS t
+#             ON t.empno
+#
+# SELECT DISTINCT title FROM titles;
 
-SELECT DISTINCT title FROM titles;
+# SELECT COUNT(title) AS Total,title
+# FROM titles
+#     JOIN
+#
+# GROUP BY title;
 
-SELECT COUNT(title) AS Total,title
-FROM titles
-    JOIN
-
-group by title;
 
